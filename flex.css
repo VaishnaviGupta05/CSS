@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    height:300px;
+    border:2px solid black;
+}
+.item{
+    background:lightblue;
+    padding:100px;
+    margin:15px;
+}
