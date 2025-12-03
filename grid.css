@@ -1,4 +1,8 @@
-.container {
+.container{
+/* grid-template-columns:1fr 1fr 1fr 1fr; */
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(3,1fr);
+grid-template-areas:"header header header header" "main main . sidebar" "footer footer footer footer";
     display: grid;
     height: 400px;
     width: 600px;
@@ -6,11 +10,24 @@
     border:1px solid black
 }
 .item{
-    height:100px;
-    width:100px;
+    /* height:200px;
+    width:200px; */
     background-color: red;
     border:1px solid brown;
     color:white;
     align-items:center;
     text-align:center;
+}
+
+.item1{
+    grid-area:header;
+}
+.item2{
+    grid-area:main;
+}
+.item3{
+    grid-area:sidebar;
+}
+.item4{
+    grid-area:footer;
 }
